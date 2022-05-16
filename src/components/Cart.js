@@ -1,5 +1,5 @@
 import React, { useEffect,useState,useContext } from 'react'
-import SingleProduct from './SingleProduct'
+import OneProduct from './OneProduct'
 import {Cart} from "../Context"
 
 const CartPage = ({}) => {
@@ -19,7 +19,7 @@ setTotal(cart.reduce((acc,curr)=>acc+Number(curr.price),0))
       <span style={{fontSize:30}}>Total:CAD:${total}</span>
       <div className='productContainer'>
         {cart.map(prod=>(
-          <SingleProduct prod={prod} key={prod.id}  />
+          <OneProduct prod={prod} key={prod.id}  />
         ))}
       </div>
     </div>

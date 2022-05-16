@@ -1,6 +1,6 @@
 import React, { useContext, useState } from 'react'
 import { faker } from '@faker-js/faker';
-import SingleProduct from './SingleProduct';
+import OneProduct from './OneProduct';
 import "./styles.css";
 import { Cart } from '../Context';
 faker.seed(100);
@@ -14,7 +14,7 @@ const Home = ({}) => {
       id: faker.datatype.uuid(),
       name: faker.commerce.productName(),
       price: faker.commerce.price(),
-      image: faker.random.image(),
+      image: faker.image.food(1234, 2345, true),
      
     }));
 
@@ -24,7 +24,7 @@ const Home = ({}) => {
   return (
     <div className="productContainer">
       {products.map((prod)=>(
-        <SingleProduct prod={prod}  key={prod.id}/>
+        <OneProduct prod={prod}  key={prod.id}/>
       ))}
     </div>
   )

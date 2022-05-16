@@ -12,10 +12,10 @@ const Header = () => {
 
   return (
     <div>
-     <span className="header">React Context API </span>
+     <span className="header">React Context API for shopping cart </span>
      <ul className='nav'>
         <li>
-            <Link to="/">Home Page</Link>
+            <Link to="/">Main Page</Link>
             </li> 
         <li>
             <Link to="/cart">Cart ({cart.length}) </Link>

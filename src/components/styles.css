@@ -10,13 +10,13 @@
     list-style: none;
     justify-content: space-around;
     align-items: center;
-    background-color: black;
+    background-color: aqua;
     height: 80px;
     margin-top: 0;
   }
   
   .nav > li {
-    color: white;
+    color: black;
   }
   
   .nav > li:hover {
@@ -27,32 +27,37 @@
   
   .productContainer {
     display: flex;
-    padding: 20px;
+    padding: 40px;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    height:20px;
+   
   }
   
   .products {
-    width: 25%;
+    width: 15%;
     padding: 10px;
-    margin: 10px;
+    margin: 20px;
     display: flex;
     flex-direction: column;
-    border: 1px solid black;
+    border: 1px solid #a73896;
+     
   }
   
   .productDesc {
     display: flex;
     justify-content: space-between;
-    padding: 5px;
+    padding: 10px;
   }
   
   .add {
     padding: 5px;
+    background-color: blue;
+    color:azure;
   }
   
   .remove {
-    background-color: grey;
-    color: white;
+    background-color: rgb(60, 160, 85);
+    color: rgb(97, 56, 195);
   }
   
